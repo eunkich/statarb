@@ -34,6 +34,7 @@ def get_largest_US_stock_tickers(num_assets: int = 100,
     if save_summary:
         summary.to_csv(f"US_Stock_MarketCap_summary_{today}")
     tickers = summary[:num_assets].Symbol
+    tickers = tickers.replace("-", ".", regex=True)
 
     return tickers
 
