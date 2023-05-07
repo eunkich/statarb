@@ -2,3 +2,6 @@ torch==1.13.1
 numpy==1.24.2
 scikit-learn==1.2.2
 pandas==2.0.0
+requests==2.30.0
+python-dotenv==1.0.0
+polygon-api-client==1.8.5
